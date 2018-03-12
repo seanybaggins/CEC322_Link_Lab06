@@ -12,6 +12,7 @@ GEN_CMDS__FLAG :=
 ORDERED_OBJS += \
 "./Lab6_Motor.obj" \
 "./startup_ccs.obj" \
+"./drivers/ADC/personalADC.obj" \
 "./drivers/LED/LED.obj" \
 "./drivers/OLED/displays.obj" \
 "./drivers/Timers/personalTimers.obj" \
@@ -32,6 +33,7 @@ RMDIR := RMDIR /S/Q
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include subdir_vars.mk
+-include drivers/ADC/subdir_vars.mk
 -include drivers/LED/subdir_vars.mk
 -include drivers/OLED/subdir_vars.mk
 -include drivers/Timers/subdir_vars.mk
@@ -39,6 +41,7 @@ RMDIR := RMDIR /S/Q
 -include drivers/subdir_vars.mk
 -include drivers/stepperMotor/subdir_vars.mk
 -include subdir_rules.mk
+-include drivers/ADC/subdir_rules.mk
 -include drivers/LED/subdir_rules.mk
 -include drivers/OLED/subdir_rules.mk
 -include drivers/Timers/subdir_rules.mk
@@ -176,8 +179,8 @@ CEC322_Link_Lab06.bin: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "Lab6_Motor.obj" "startup_ccs.obj" "drivers\LED\LED.obj" "drivers\OLED\displays.obj" "drivers\Timers\personalTimers.obj" "drivers\UART\personalUART.obj" "drivers\cfal96x64x16.obj" "drivers\stepperMotor\stepperMotor.obj" 
-	-$(RM) "Lab6_Motor.d" "startup_ccs.d" "drivers\LED\LED.d" "drivers\OLED\displays.d" "drivers\Timers\personalTimers.d" "drivers\UART\personalUART.d" "drivers\cfal96x64x16.d" "drivers\stepperMotor\stepperMotor.d" 
+	-$(RM) "Lab6_Motor.obj" "startup_ccs.obj" "drivers\ADC\personalADC.obj" "drivers\LED\LED.obj" "drivers\OLED\displays.obj" "drivers\Timers\personalTimers.obj" "drivers\UART\personalUART.obj" "drivers\cfal96x64x16.obj" "drivers\stepperMotor\stepperMotor.obj" 
+	-$(RM) "Lab6_Motor.d" "startup_ccs.d" "drivers\ADC\personalADC.d" "drivers\LED\LED.d" "drivers\OLED\displays.d" "drivers\Timers\personalTimers.d" "drivers\UART\personalUART.d" "drivers\cfal96x64x16.d" "drivers\stepperMotor\stepperMotor.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

@@ -79,7 +79,7 @@ void diplaySplashOnOLED(void) {
 
     // Put the lab name in the middle of the banner.
     GrContextFontSet(&sContext, g_psFontFixed6x8);
-    GrStringDrawCentered(&sContext, "Link_Hostetter", -1,
+    GrStringDrawCentered(&sContext, "Sean Link", -1,
                          GrContextDpyWidthGet(&sContext) / 2, 4, 0);
 
 }

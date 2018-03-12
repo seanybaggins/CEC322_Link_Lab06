@@ -21,6 +21,7 @@ Lab6_Motor.obj: ../drivers/UART/personalUART.h
 Lab6_Motor.obj: ../drivers/stepperMotor/stepperMotor.h
 Lab6_Motor.obj: ../drivers/Timers/personalTimers.h
 Lab6_Motor.obj: C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/timer.h
+Lab6_Motor.obj: ../drivers/ADC/personalADC.h
 
 ../Lab6_Motor.c: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/stdint.h: 
@@ -43,3 +44,4 @@ C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/gpio.h:
 ../drivers/stepperMotor/stepperMotor.h: 
 ../drivers/Timers/personalTimers.h: 
 C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/timer.h: 
+../drivers/ADC/personalADC.h: 

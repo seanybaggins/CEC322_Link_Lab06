@@ -1,8 +1,10 @@
 /*
  * personalTimers.c
  *
- *  Created on: Mar 3, 2018
- *      Author: Sean
+ * Created on: Mar 3, 2018
+ * Author: Sean Link
+ *
+ * Purpose: Store functional definitions for timer functionalities
  */
 
 #include <stdint.h>
@@ -16,6 +18,7 @@
 #include "driverlib/timer.h"
 #include "personalTimers.h"
 
+// Purpose:
 void setupTimers(void) {
     // Turning on the timers
     SysCtlPeripheralEnable(SYSCTL_PERIPH_TIMER0);
